@@ -7,9 +7,5 @@
   "git": true,
   "version": 1,
   "framework": "react-cra",
-  "chosenAddOns": [
-    "shadcn",
-    "t3env",
-    "tanstack-query"
-  ]
+  "chosenAddOns": ["shadcn", "t3env", "tanstack-query"]
 }
