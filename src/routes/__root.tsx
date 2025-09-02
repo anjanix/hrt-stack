@@ -5,9 +5,9 @@ import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 import Header from "../components/header";
 import TanStackQueryDevtools from "../integrations/tanstack-query/devtools";
 
-interface MyRouterContext {
+type MyRouterContext = {
   queryClient: QueryClient;
-}
+};
 
 export const Route = createRootRouteWithContext<MyRouterContext>()({
   component: () => (

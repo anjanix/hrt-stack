@@ -11,7 +11,7 @@ import {
 import { routeTree } from "./routeTree.gen";
 
 import "./styles.css";
-import reportWebVitals from "./reportWebVitals.ts";
+import reportWebVitals from "./report-web-vitals.ts";
 
 // Create a new router instance
 
@@ -29,6 +29,7 @@ const router = createRouter({
 
 // Register the router instance for type safety
 declare module "@tanstack/react-router" {
+  // biome-ignore lint/nursery/useConsistentTypeDefinitions: required for type safety
   interface Register {
     router: typeof router;
   }
