@@ -1,6 +1,15 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.2.2/schema.json",
-  "extends": [
-    "ultracite"
+  "extends": ["ultracite"],
+  "overrides": [
+    {
+      "includes": ["src/routeTree.gen.ts"],
+      "linter": {
+        "enabled": false
+      },
+      "formatter": {
+        "enabled": false
+      }
+    }
   ]
 }
