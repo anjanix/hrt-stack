@@ -7,7 +7,9 @@
     "start": "vite --port 3000",
     "build": "vite build && tsc",
     "serve": "vite preview",
-    "test": "vitest run"
+    "test": "vitest run",
+    "lint": "ultracite check",
+    "lint:fix": "ultracite fix"
   },
   "dependencies": {
     "@t3-oss/env-core": "^0.13.8",
@@ -26,6 +28,7 @@
     "zod": "^4.1.5"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.2.2",
     "@tanstack/react-devtools": "^0.5.5",
     "@tanstack/react-query-devtools": "^5.85.9",
     "@tanstack/react-router-devtools": "^1.131.32",
@@ -37,6 +40,7 @@
     "@vitejs/plugin-react": "^5.0.2",
     "jsdom": "^26.1.0",
     "typescript": "^5.9.2",
+    "ultracite": "5.3.1",
     "vite": "^7.1.4",
     "vitest": "^3.2.4",
     "web-vitals": "^5.1.0"
